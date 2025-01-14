@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Student Portal</h1>
+    </header>
+    <main id="main-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search" name="search" id="searchinput">
+            <button class="btn" type="submit" id="searchbtn">Search</button>
+        </div>
+        <div class="filter-buttons">
+            <button class="btn" id="sortAZ">Sort A&rarr;Z</button>
+            <button class="btn" id="sortZA">Sort Z&rarr;A</button>
+            <button class="btn" id="sortMarks">Sort by Marks</button>
+            <button class="btn" id="sortPassing">Sort by Passing</button>
+            <button class="btn" id="sortClass">Sort by Class</button>
+            <button class="btn" id="sortGender">Sort by  Gender</button>
+        </div>
+        <div class="student-details">
+            <table id="stable">
+                <thead>
+                    <th width="50px">ID</th>
+                    <th width="250px">Name</th>
+                    <th width="180px">Gender</th>
+                    <th width="180px">Class</th>
+                    <th width="180px">Marks</th>
+                    <th width="180px">Passing</th>
+                    <th width="190px">Email</th>
+                </thead>
+                <tbody id="studTable">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td><img src="#"><span>Avi Varshishtha<span></td>
+                        <td>Male</td>
+                        <td>12</td>
+                        <td>90</td>
+                        <td>Failed</td>
+                        <td>abc@gmail.com</td>
+                    </tr> -->
+                </tbody>
+                
+            </table>
+            <br>
+            <table id="mtable" style="display: none;">
+                <caption>Male Student Data</caption>
+                <thead>
+                    <th width="50px">ID</th>
+                    <th width="250px" style="text-align: center;">Name</th>
+                    <th width="180px">Gender</th>
+                    <th width="180px">Class</th>
+                    <th width="180px">Marks</th>
+                    <th width="180px">Passing</th>
+                    <th width="190px">Email</th>
+                </thead>
+                <tbody id="maleTableBody" ></tbody>
+            </table>
+            <br>
+            <table id="ftable" style="display: none;">
+                <caption>Female Student Data</caption>
+                <thead>
+                    <th width="50px">ID</th>
+                    <th width="250px">Name</th>
+                    <th width="180px">Gender</th>
+                    <th width="180px">Class</th>
+                    <th width="180px">Marks</th>
+                    <th width="180px">Passing</th>
+                    <th width="190px">Email</th>
+                </thead>
+                <tbody id="femaleTableBody" ></tbody>
+            </table>
+
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
